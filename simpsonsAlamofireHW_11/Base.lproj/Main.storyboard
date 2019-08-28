@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpsonsApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpsonsAlamofireHW_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
         <!--Character View Controller-->
         <scene sceneID="sBq-rk-vIv">
             <objects>
-                <viewController id="xhh-Kb-XVQ" customClass="CharacterViewController" customModule="simpsonsApi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xhh-Kb-XVQ" customClass="CharacterViewController" customModule="simpsonsAlamofireHW_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KJa-ul-EPT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,14 +86,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-qJ-oLO">
-                                <rect key="frame" x="54.5" y="576" width="305" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="XDl-q3-d3P">
-                                <rect key="frame" x="197" y="368.5" width="20" height="20"/>
+                                <rect key="frame" x="197" y="395.5" width="20" height="20"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-wX-w5J">
                                 <rect key="frame" x="129" y="64" width="156" height="71"/>
@@ -113,9 +107,9 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-ni-BIq">
-                                <rect key="frame" x="54.5" y="189" width="305" height="379"/>
+                                <rect key="frame" x="54.5" y="189" width="305" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="379" id="Czv-VO-6a6"/>
+                                    <constraint firstAttribute="height" constant="350" id="Czv-VO-6a6"/>
                                     <constraint firstAttribute="width" constant="305" id="Ix6-Ki-iUv"/>
                                 </constraints>
                             </imageView>
@@ -134,15 +128,21 @@
                                     <action selector="nextCharacterButton" destination="xhh-Kb-XVQ" eventType="touchUpInside" id="EQa-ea-DX4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-qJ-oLO">
+                                <rect key="frame" x="54.5" y="539" width="305" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.62964867440000005" green="0.79272861630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="V4C-qJ-oLO" firstAttribute="top" secondItem="Ojn-ni-BIq" secondAttribute="bottom" constant="8" id="2x7-0G-aAb"/>
+                            <constraint firstItem="V4C-qJ-oLO" firstAttribute="top" secondItem="Ojn-ni-BIq" secondAttribute="bottom" id="2x7-0G-aAb"/>
                             <constraint firstItem="7PB-85-qtq" firstAttribute="bottom" secondItem="vHZ-jF-v79" secondAttribute="bottom" multiplier="1.1" constant="-35.900000000000091" id="Eom-mu-pOn"/>
                             <constraint firstItem="KBd-wX-w5J" firstAttribute="top" secondItem="7PB-85-qtq" secondAttribute="top" constant="20" id="NZ7-QG-EhV"/>
                             <constraint firstItem="12W-0D-gWu" firstAttribute="leading" secondItem="7PB-85-qtq" secondAttribute="leading" constant="55" id="dJO-7f-igt"/>
                             <constraint firstItem="12W-0D-gWu" firstAttribute="top" secondItem="KBd-wX-w5J" secondAttribute="bottom" constant="20" id="ddS-eW-8dl"/>
-                            <constraint firstItem="XDl-q3-d3P" firstAttribute="centerY" secondItem="Ojn-ni-BIq" secondAttribute="centerY" id="kmz-Qa-dGZ"/>
+                            <constraint firstItem="XDl-q3-d3P" firstAttribute="centerY" secondItem="Ojn-ni-BIq" secondAttribute="centerY" constant="41.5" id="kmz-Qa-dGZ"/>
                             <constraint firstItem="XDl-q3-d3P" firstAttribute="centerX" secondItem="Ojn-ni-BIq" secondAttribute="centerX" id="lx5-KE-SSK"/>
                             <constraint firstItem="Ojn-ni-BIq" firstAttribute="top" secondItem="12W-0D-gWu" secondAttribute="bottom" constant="10" id="nlB-bO-UKi"/>
                             <constraint firstItem="7PB-85-qtq" firstAttribute="trailing" secondItem="12W-0D-gWu" secondAttribute="trailing" constant="54" id="p1u-2N-cKz"/>
@@ -151,6 +151,7 @@
                             <constraint firstItem="vHZ-jF-v79" firstAttribute="centerX" secondItem="KJa-ul-EPT" secondAttribute="centerX" id="wrK-al-aaB"/>
                             <constraint firstItem="V4C-qJ-oLO" firstAttribute="centerX" secondItem="KJa-ul-EPT" secondAttribute="centerX" id="x0R-Yw-x88"/>
                             <constraint firstItem="Ojn-ni-BIq" firstAttribute="width" secondItem="V4C-qJ-oLO" secondAttribute="width" id="xwa-T0-Yt4"/>
+                            <constraint firstItem="vHZ-jF-v79" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V4C-qJ-oLO" secondAttribute="bottom" constant="10" id="ybC-s7-BZi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7PB-85-qtq"/>
                     </view>
@@ -164,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-R5-OOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955.07246376811599" y="31.473214285714285"/>
+            <point key="canvasLocation" x="954.375" y="30.633802816901408"/>
         </scene>
     </scenes>
     <resources>

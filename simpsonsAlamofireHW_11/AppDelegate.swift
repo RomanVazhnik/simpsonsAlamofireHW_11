@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  simpsonsAlamofireHW_11
+//  simpsonsApi
 //
-//  Created by Роман Важник on 28/08/2019.
+//  Created by Роман Важник on 22/08/2019.
 //  Copyright © 2019 Роман Важник. All rights reserved.
 //
 

@@ -1,0 +1,6 @@
+framework module Pods_simpsonsAlamofireHW_11 {
+  umbrella header "Pods-simpsonsAlamofireHW_11-umbrella.h"
+
+  export *
+  module * { export * }
+}
